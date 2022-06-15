@@ -1,0 +1,79 @@
+<html>
+  <head>
+    <title>WakeCup / Contact</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Bodoni&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="page-container">
+      <header>
+        <nav>
+          <div class="logo">
+            <img src="images/WakeCup_500x500.png" alt="WakeCup Logo" />
+          </div>
+
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li ><a href="about_us.html">About Us</a></li>
+            <li><a href="coffee_blends.html">Coffee Blends</a></li>
+            <li><a href="brewing_equipment.html">Brewing Equipment</a></li>
+            <li><a href="learn.html">Learn with us</a></li>
+            <li class="active"><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="mainabpage">
+        <div class="source">
+          <h1>Contact</h1>
+        </div>
+        <div class="contactcontainer"><img src="images/contact.jpeg" alt="Contact">
+        </div>
+        <div class="formheading">Contact Form</div>
+        <div class="contactform">
+         
+         <form action="/" method="POST">
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" placeholder="Your name.." required>
+
+          <label for="email">E-mail</label>
+          <input type="email" name="email" id="email" placeholder="Your email.." required>
+
+          <label for="phone">Phone</label>
+          <input type="tel" name="phone" id="phone" placeholder="Your phone.."required>
+
+          <label>Are you interested in partnering with us? </label>&nbsp;&nbsp;&nbsp;
+          <input  type="radio" name="interest" value="Yes">Yes</input>&nbsp;&nbsp;
+          <input  type="radio" name="interest" value="No">No</input>
+<br>
+          <label for="city">City</label>
+          <input type="text" name="city" id="city" placeholder="Your city.." required>
+
+          <label for="message">Message</label>
+    <textarea id="message" name="message" placeholder="Write something.." rows="5" cols="7" required></textarea>
+
+    <input type="submit" value="Submit">
+         </form>
+        </div>
+        
+       </div>
+      </div>
+      <footer>
+        Copyright &copy; WakeCup
+        <div>
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-instagram"></a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

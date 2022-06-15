@@ -1,0 +1,999 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: 'Libre Bodoni', 'sans-serif';
+  min-height: 100vh;
+  background-color: #ffffff;
+}
+
+/* *index page* */
+
+.page-container {
+  margin-bottom: 30px;
+}
+
+nav {
+  display: flex;
+  background-color: rgb(242, 237, 214);
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+nav .logo {
+  display: flex;
+  align-items: center;
+}
+
+nav .logo img {
+  width: 250px;
+  height: 130px;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: flex-start;
+}
+
+nav ul li {
+  color: rgb(15, 9, 1);
+  padding: 22px 40px;
+  background-color: rgb(242, 237, 214);
+}
+
+nav ul li:hover {
+  background-color: darksalmon;
+}
+
+nav ul li.active {
+  background-color: darksalmon;
+}
+
+nav ul li a {
+  color: rgb(115, 50, 3);
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+}
+
+@media all and (max-width: 800px) {
+  nav {
+    justify-content: flex-start;
+  }
+
+  nav ul {
+    justify-content: space-between;
+  }
+}
+
+@media all and (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul {
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  nav ul li {
+    text-align: center;
+  }
+}
+
+.banner {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 600px;
+  width: 100%;
+  background-color: antiquewhite;
+}
+
+@media all and (max-width: 600px) {
+  .banner {
+    flex-direction: column;
+  }
+}
+
+@media all and (max-width: 800px) {
+  .banner {
+    flex-direction: column;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  .banner {
+    flex-direction: column;
+  }
+}
+
+.left {
+  flex: 50%;
+  background-image: url(images/OurCafe-612x612.jpg);
+  display: inline-block;
+  opacity: 0.4;
+  height: 600px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.right {
+  flex: 50%;
+  background-image: url(images/Source.jpg);
+  display: inline-block;
+  opacity: 0.5;
+  height: 600px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.banner .left a,
+.banner .right a {
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  justify-self: center;
+  color: white;
+  font-size: 90px;
+  font-weight: 200px;
+  text-shadow: 50px;
+  animation: appear 1s ease-in-out 0s forwards;
+  margin: auto;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    top: -100px;
+  }
+  to {
+    opacity: 1;
+    top: 0;
+  }
+}
+
+.banner .left,
+.banner .right {
+  flex: 1;
+  justify-self: center;
+  color: white;
+  font-size: 90px;
+  font-weight: 200px;
+  text-shadow: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.banner .left:hover,
+.banner .right:hover {
+  transform: scale(0.9, 0.9);
+  opacity: 0.7;
+}
+
+@media all and (max-width: 600px) {
+  .banner {
+    flex-direction: column;
+  }
+
+  .footer {
+    position: fixed;
+  }
+}
+
+.homemainpage {
+  overflow: auto;
+  background-color: rgb(246, 246, 239);
+}
+
+.text {
+  margin: 20px 40px 90px 40px;
+}
+
+.text p {
+  color: brown;
+  font-size: 25px;
+  font-weight: bold;
+  background-color: rgb(249, 237, 237);
+  padding: 40px 40px;
+  width: 100%;
+  display: inline-block;
+  box-sizing: border-box;
+}
+/* *index page* */
+
+/* *source* */
+
+div .mainpage {
+  overflow: auto;
+  background-color: rgb(246, 246, 239);
+}
+
+.source {
+  border-bottom: rgb(115, 50, 3) solid 2px;
+  color: brown;
+  font-size: 20px;
+  font-weight: 40px;
+  padding-left: 10px;
+}
+
+.image img {
+  object-fit: contain;
+  width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+  border: rgb(15, 9, 1) solid 1px;
+}
+
+.lines {
+  margin: 30px 30px 20px;
+}
+.lines p {
+  border: rgb(115, 50, 3) solid 1px;
+  background-color: rgb(254, 248, 241);
+  padding: 10px;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 20px 30px 70px;
+}
+
+.box .src1,
+.box .src2,
+.box .src3 {
+  border: rgb(115, 50, 3) solid 1px;
+  padding: 2px;
+  margin: 10px 30px;
+  animation: appear 1s ease-in-out 0s forwards;
+}
+
+.box .src1 {
+  background-image: url(images/src1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+}
+
+.box .src2 {
+  background-image: url(images/src2.JPG);
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.7;
+}
+
+.box .src3 {
+  background-image: url(images/src3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.7;
+}
+
+.box .src1 p,
+.box .src1 h2 {
+  color: whitesmoke;
+  font-weight: 30px;
+  font-weight: bold;
+}
+
+.box .src2 p,
+.box .src2 h2 {
+  color: whitesmoke;
+  font-weight: 30px;
+  font-weight: bold;
+}
+
+.box .src3 p,
+.box .src3 h2 {
+  color: whitesmoke;
+  font-weight: 30px;
+  font-weight: bold;
+}
+
+.box .src1:hover,
+.box .src2:hover,
+.box .src3:hover {
+  opacity: 1;
+  transform: scale(0.9, 0.9);
+}
+
+/* *source* */
+
+/* *our cafes* */
+.cafeimage img {
+  object-fit: contain;
+  border: rgb(15, 9, 1) solid 1px;
+  width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+}
+
+.flexcontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+@media all and (max-width: 600px) {
+  .flexcontainer {
+    flex-direction: column;
+  }
+}
+
+@media all and (max-width: 800px) {
+  .flexcontainer {
+    flex-direction: column;
+  }
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 400px;
+  height: 300px;
+  margin: 50px;
+  padding: 20px;
+  background-color: rgb(250, 234, 234);
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  transform: scale(1.2, 1.2);
+  background-color: rgb(240, 200, 200);
+}
+
+.card h1 {
+  text-align: center;
+  padding-top: 20px;
+  color: darkgreen;
+  border-bottom: brown 4px solid;
+}
+
+.addr {
+  padding: 2px 16px;
+  text-align: center;
+  font-size: 20px;
+  color: indianred;
+}
+
+/* *our cafes* */
+
+/* *about us* */
+
+div .mainabpage {
+  background-color: rgb(246, 246, 239);
+  overflow: auto;
+}
+
+.aboutcontainer {
+  position: relative;
+  text-align: center;
+}
+
+.aboutcontainer img {
+  object-fit: cover;
+  width: 100%;
+  min-height: 500px;
+  opacity: 0.7;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.centered b {
+  color: #141212;
+  font-weight: 80px;
+  font-size: 40px;
+  font-style: italic;
+  text-shadow: 2px 2px gray;
+  position: relative;
+  animation: appear 1s ease-in-out 0s forwards;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    top: -100px;
+  }
+  to {
+    opacity: 1;
+    top: 0;
+  }
+}
+
+.centered b::before {
+  color: #141212;
+  content: open-quote;
+  top: 0;
+  left: 0;
+}
+
+.centered b::after {
+  color: #141212;
+  content: close-quote;
+  bottom: 0;
+  right: 0;
+}
+
+.bodyabouttext {
+  background-color: rgb(229, 243, 246);
+  box-sizing: border-box;
+  border: #02143b 1px solid;
+  margin: 20px 50px 80px;
+  padding: 10px;
+  min-height: 350px;
+}
+
+.bodyabouttext div {
+  padding: 10px;
+  margin: 10px 20px;
+  font-size: 20px;
+  color: #02143b;
+  background-color: rgb(229, 243, 246);
+}
+
+/* *about us* */
+
+/* * Brewing Equipment* */
+
+.brewimage img {
+  object-fit: contain;
+  border: rgb(15, 9, 1) solid 1px;
+  width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+}
+
+.brewtext h2 {
+  color: rgb(115, 50, 3);
+  padding-left: 20px;
+}
+
+.brewtext p {
+  color: rgb(32, 14, 1);
+  font-size: 20px;
+  font-weight: 50px;
+  padding-left: 20px;
+}
+
+.brewflexcontainer {
+  display: grid;
+  align-content: space-evenly;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  width: 95%;
+  gap: 10px;
+  background-color: rgb(234, 226, 226);
+  padding: 20px 20px;
+  margin: 10px 10px 80px;
+}
+
+.brewflexcontainer .brew {
+  text-align: center;
+  padding: 10px 10px;
+  font-size: 30px;
+}
+
+.brewcard {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  text-align: left;
+  background-color: rgb(245, 225, 225);
+}
+
+.brewcard:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  transform: scale(0.9, 0.9);
+  background-color: rgb(240, 200, 200);
+}
+
+.brewcard img {
+  width: 100%;
+}
+
+.brewcard h3 {
+  color: brown;
+  padding: 10px;
+}
+
+.brewcard p {
+  color: rgba(171, 34, 34, 0.856);
+  font-size: 15px;
+  font-weight: bold;
+  padding-left: 10px;
+  padding-top: 2px;
+}
+
+.brewcard .brewbtn {
+  margin: 10px;
+}
+
+.brewcard .brewbtn button {
+  border: none;
+  width: 150px;
+  height: 60px;
+  background-color: rgb(135, 65, 65);
+  color: #1b0101;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.brewcard button:hover {
+  opacity: 0.7;
+}
+
+.brewcard .brewbtn span {
+  font-size: 25px;
+  font-weight: 20px;
+  padding-left: 10px;
+}
+
+/* * Brewing Equipment* */
+
+/* * Learn with us* */
+.learnimage img {
+  object-fit: contain;
+  border: rgb(15, 9, 1) solid 1px;
+  width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+}
+
+.learnheadline {
+  color: brown;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 30px;
+  margin: 10px 80px;
+  background-color: rgb(249, 237, 237);
+}
+
+.wrkshop {
+  margin: 10px 10px 80px;
+  overflow: auto;
+}
+
+.wrkshop h1 {
+  color: #740420;
+  font-weight: bold;
+  font-size: 45px;
+  border-bottom: #2b010c 5px solid;
+  padding: 20px 20px;
+  margin: 10px 30px;
+}
+
+.wrkheading {
+  padding: 20px;
+  margin: 20px 60px;
+  border: #2b010c 1px solid;
+}
+
+.wrkheading h2 {
+  padding: 5px;
+  font-size: 40px;
+  color: darkgreen;
+  border-bottom: brown 4px solid;
+}
+
+.wrkheading p {
+  font-size: 30px;
+  font-weight: 30px;
+  color: darkblue;
+}
+
+.wrkheading span {
+  font-size: 30px;
+  font-weight: 30px;
+  color: rgb(125, 22, 4);
+}
+
+.wrkheading button {
+  border: none;
+  width: 200px;
+  height: 60px;
+  background-color: rgb(240, 205, 205);
+  color: #380101;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.wrkheading button:hover {
+  opacity: 0.6;
+}
+
+/* * Learn with us* */
+
+/* * Contact* */
+
+.contactcontainer img {
+  object-fit: cover;
+  border: rgb(15, 9, 1) solid 1px;
+  width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+}
+
+.formheading {
+  font-size: 40px;
+  text-align: center;
+  font-weight: bold;
+  color: #333f5a;
+  text-shadow: 2px 2px#55acee;
+  padding: 5px 10px;
+  margin-top: 5px;
+}
+
+.contactform {
+  border-radius: 5px;
+  background-color: #dfeff4;
+  padding: 30px;
+  margin: 10px 20px 80px 30px;
+  border: #02143b solid 1px;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='tel'],
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type='radio'] {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
+
+input[type='submit'] {
+  background-color: #333f5a;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 12px 20px;
+  width: 200px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type='submit']:hover {
+  background-color: #aebadb;
+}
+
+/* * Contact* */
+
+/* * Coffee Blends * */
+.coffeeblend img {
+  object-fit: cover;
+  border: rgb(15, 9, 1) solid 1px;
+  width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+}
+
+.blendheader {
+  background-color: antiquewhite;
+  color: #380101;
+  padding: 30px;
+  margin: 20px 20px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.blendcontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  /* margin-bottom: 30px; */
+  margin: 20px 50px 80px;
+}
+
+.blendtitle {
+  border: rgb(49, 14, 14) 2px solid;
+  background-color: rgb(243, 224, 224);
+  align-items: center;
+  text-align: center;
+  margin: 10px 20px;
+}
+
+.item1,
+.item2 {
+  flex: 1;
+}
+
+.item1 h1,
+.item2 h1 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: darkgreen;
+  border-bottom: brown 4px solid;
+}
+
+.item1:hover,
+.item2:hover {
+  transform: scale(1, 1.1);
+  background-color: rgb(240, 200, 200);
+}
+
+.item1 a button,
+.item2 a button {
+  color: white;
+  background-color: rgb(174, 121, 121);
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 30px 80px;
+  width: auto;
+  align-items: center;
+  margin: 10px 30px 10px;
+  cursor: pointer;
+}
+
+.item1 a button:hover,
+.item2 a button:hover {
+  transform: scale(1.2, 1.2);
+  background-color: rgb(249, 119, 119);
+}
+
+@media all and (max-width: 500px) {
+  .blendcontainer {
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0px 0px 80px;
+    padding: 0px;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .blendcontainer {
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 20px 0px 80px;
+  }
+}
+
+@media all and (max-width: 800px) {
+  .blendcontainer {
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 20px 0px 80px;
+  }
+}
+/* * Coffee Blends * */
+
+/* * classics * */
+
+.classiccontainer {
+  display: grid;
+  align-content: space-evenly;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  width: 95%;
+  gap: 10px;
+  background-color: rgb(234, 226, 226);
+  padding: 10px;
+  margin: 20px 30px 90px;
+}
+
+.classiccontainer .classic {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.clcard {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  text-align: left;
+  background-color: rgb(245, 225, 225);
+}
+
+.clcard:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  transform: scale(0.9, 0.9);
+  background-color: rgb(240, 200, 200);
+}
+
+.clcard img {
+  width: 100%;
+}
+
+.clcard h3 {
+  color: rgb(2, 57, 2);
+  padding: 20px;
+}
+
+.clcard p {
+  color: rgba(171, 34, 34, 0.856);
+  font-size: 20px;
+  font-weight: bold;
+  padding-left: 20px;
+  padding-top: 2px;
+}
+
+.clcard .clbtn {
+  margin: 10px;
+}
+
+.clcard .clbtn button {
+  border: none;
+  width: 150px;
+  height: 60px;
+  background-color: rgb(136, 97, 97);
+  color: #1b0101;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.clbtn button:hover {
+  opacity: 0.7;
+}
+
+.clcard .clbtn span {
+  font-size: 25px;
+  font-weight: 20px;
+  padding-left: 10px;
+}
+
+/* * classics * */
+
+/* * Unique Blends * */
+.uniquecontainer {
+  display: grid;
+  align-content: space-evenly;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  width: 95%;
+  gap: 10px;
+  background-color: rgb(234, 226, 226);
+  padding: 10px;
+  margin: 20px 30px 90px;
+}
+
+.uniquecontainer .unique {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.uncard {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  text-align: left;
+  background-color: rgb(245, 225, 225);
+}
+
+.uncard:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  transform: scale(0.9, 0.9);
+  background-color: rgb(240, 200, 200);
+}
+
+.uncard img {
+  width: 100%;
+}
+
+.uncard h3 {
+  color: rgb(2, 73, 2);
+  padding: 10px;
+}
+
+.uncard p {
+  color: rgba(171, 34, 34, 0.856);
+  font-size: 20px;
+  font-weight: bold;
+  padding-left: 10px;
+  padding-top: 2px;
+}
+
+.uncard .unbtn {
+  margin: 10px;
+}
+
+.uncard .unbtn button {
+  border: none;
+  width: 150px;
+  height: 60px;
+  background-color: rgb(136, 97, 97);
+  color: #1b0101;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.unbtn button:hover {
+  opacity: 0.7;
+}
+
+.uncard .unbtn span {
+  font-size: 25px;
+  font-weight: 20px;
+  padding-left: 10px;
+}
+
+/* * Unique Blends * */
+
+/* * Footer * */
+
+footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(242, 237, 214);
+  padding: 10px 20px;
+  color: rgb(115, 50, 3);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+footer div {
+  float: right;
+}
+
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55acee;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
